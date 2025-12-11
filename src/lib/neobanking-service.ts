@@ -324,7 +324,7 @@ function generateCardNumber(): string {
 }
 
 function generateCardId(): string {
-  return `card_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  return `card_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
 }
 
 function generateCVV(): string {
@@ -340,7 +340,7 @@ function generateExpiryDate(): string {
 }
 
 function generateTransactionId(): string {
-  return `txn_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  return `txn_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
 }
 
 function loadCardsFromStorage(): VirtualCard[] {
