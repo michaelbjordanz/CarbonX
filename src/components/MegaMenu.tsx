@@ -57,12 +57,12 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 p-4 md:p-6">
           {/* Left: feature tiles */}
           <div className="md:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <FeatureTile title="Web5 NeoBanking" text="Decentralized banking & payments" color="from-cyan-500 to-blue-600" href="/neobanking" badge="NEW" onClick={onClose} />
             <FeatureTile title="Marketplace" text="Browse verified carbon credits" color="from-orange-500 to-red-500" href="/marketplace" badge="HOT" onClick={onClose} />
-            <FeatureTile title="Trading" text="Trade carbon credits" color="from-indigo-500 to-blue-600" href="/trading" badge="NEW" onClick={onClose} />
-            <FeatureTile title="Portfolio" text="Track crypto assets" color="from-violet-500 to-purple-600" href="/portfolio" badge="NEW" onClick={onClose} />
-            <FeatureTile title="Toucan Protocol" text="Real blockchain carbon credits" color="from-emerald-500 to-teal-600" href="/toucan-demo" badge="NEW" onClick={onClose} />
+            <FeatureTile title="Trading" text="Trade carbon credits" color="from-indigo-500 to-blue-600" href="/trading" onClick={onClose} />
+            <FeatureTile title="Portfolio" text="Track crypto assets" color="from-violet-500 to-purple-600" href="/portfolio" onClick={onClose} />
+            <FeatureTile title="Toucan Protocol" text="Real blockchain carbon credits" color="from-emerald-500 to-teal-600" href="/toucan-demo" onClick={onClose} />
             <FeatureTile title="AI Calculator" text="AI-powered carbon credits" color="from-green-500 to-emerald-600" href="/ai-calculator" badge="AI" onClick={onClose} />
-            <FeatureTile title="Event Planner" text="Plan sustainable events" color="from-emerald-500 to-green-600" href="/event-planner" badge="NEW" onClick={onClose} />
           </div>
 
           {/* Right: explore more */}
@@ -70,6 +70,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
             <div className="rounded-2xl bg-zinc-900/50 border border-zinc-800 p-4">
               <div className="text-sm font-semibold text-zinc-100 mb-3">Explore more</div>
               <ul className="space-y-2 text-sm">
+                <li><Link onClick={onClose} href="/neobanking" className="text-zinc-200 hover:underline">🏦 Web5 NeoBanking</Link></li>
                 <li><Link onClick={onClose} href="/developer" className="text-zinc-200 hover:underline">• Developer</Link></li>
                 <li><Link onClick={onClose} href="/marketplace" className="text-zinc-200 hover:underline">• Carbon Marketplace</Link></li>
                 <li><Link onClick={onClose} href="/trading" className="text-zinc-200 hover:underline">• Trading Platform</Link></li>
