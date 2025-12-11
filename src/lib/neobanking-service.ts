@@ -56,7 +56,7 @@ export async function initializeBankingAccount(): Promise<BankAccount> {
     accountType: 'checking',
     balance: 1000, // Starting balance for demo
     currency: 'USD',
-    did,
+    did: did || '',
     createdAt: new Date().toISOString(),
   };
 
@@ -72,7 +72,9 @@ export async function initializeBankingAccount(): Promise<BankAccount> {
       },
     });
 
-    await record?.send(did);
+    if (did) {
+      await record?.send(did);
+    }
     return account;
   } catch (error) {
     console.error('Failed to create bank account:', error);
