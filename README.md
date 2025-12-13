@@ -57,10 +57,18 @@
 - **Real-time Analytics** - Live market data and sustainability metrics
 - **Cryptocurrency Integration** - Support for carbon-related crypto investments and green tokens
 
+### 🏦 Web5 NeoBanking (NEW!)
+- **Decentralized Banking** - Self-sovereign financial services powered by Web5 and DIDs
+- **Virtual Card Issuing** - Instant debit and credit card creation with full management
+- **AI Payment Agent** - Smart payment processing with configurable approval limits
+- **Secure Transactions** - Deposit, withdraw, and send payments with blockchain security
+- **Transaction History** - Complete audit trail of all banking activities
+
 ### 🌐 Web3 & Blockchain
 - **Smart Contracts** - Ethereum-based carbon credit tokenization and trading
 - **MetaMask Integration** - Secure wallet connectivity and transaction management
 - **ThirdWeb Integration** - Simplified Web3 development and deployment
+- **Web5 Integration** - TBD's decentralized identity and data platform
 
 ### 🎨 User Experience
 - **Modern Dark Theme** - Professional, accessible design with smooth animations
@@ -151,6 +159,7 @@ npm run dev
 carbonx/
 ├── src/
 │   ├── app/                    # Next.js App Router pages
+│   │   ├── neobanking/         # Web5 NeoBanking Platform
 │   │   ├── ai-calculator/      # AI Carbon Calculator
 │   │   ├── plastic-calculator/ # AI Plastic Footprint
 │   │   ├── event-planner/      # Sustainable Event Planner
